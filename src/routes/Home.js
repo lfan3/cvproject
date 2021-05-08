@@ -9,7 +9,7 @@ import OtherExperiences from '../components/Cards/OtherExperiences';
 import PhenixStage from '../components/Cards/PhenixStage';
 import Interest from '../components/Cards/Interest';
 import  OrganicForm from '../components/OrganicForm'
-import {useEffect,Fragment} from 'react';
+import {Fragment} from 'react';
 
 export default function Home(){
     const rooEl = document.getElementById('root');
@@ -19,7 +19,6 @@ export default function Home(){
     rooEl.classList.add('cvRoot');
     return(
         <Fragment>
-        <OrganicForm/>
         <div className = 'homeWrapper'>
             <Container className='contentWrapper'>
                 <Row className="header" >
