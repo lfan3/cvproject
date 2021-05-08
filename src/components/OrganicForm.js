@@ -13,7 +13,7 @@ export default function OrganicForm(){
         {name:'.path7', pathData:"M -85.59,444.4 -85.59,890.6 546.9,895.6 C 546.9,895.6 517.4,695.4 339.9,593.4 187.7,505.9 57.98,629.2 -85.59,444.4 Z"},
     ]
     useEffect(()=>{
-        _paths.map((path)=>{
+        _paths.map((path)=>(
             anime({
                 targets:path.name,
                 duration: anime.random(3000,5000),
@@ -22,7 +22,7 @@ export default function OrganicForm(){
 				loop: true,
 				direction: 'alternate'
             })
-        })
+        ))
     })
     return(
         <div className="organic">
