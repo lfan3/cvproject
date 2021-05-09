@@ -45,10 +45,13 @@ export default function CvCover(props){
                 <div className="letter li">历</div>
             </button>
             </div>
-            <div className='ghcv'>
-                <a href="https://github.com/lfan3" className='ghcv--link'>
-                    <GitHubIcon viewBox={'0 -1 26 26'} />
-                </a>
+            <div className='ghcvWrapper'>
+                <div className='ghcv'>
+                    <a href="https://github.com/lfan3/cvproject" className='ghcv--link'>
+                        <div>查阅简历源代码</div>
+                        <div><GitHubIcon viewBox={'0 -1 26 26'}/></div>
+                    </a>
+                </div>
             </div>
         </Fragment>
 

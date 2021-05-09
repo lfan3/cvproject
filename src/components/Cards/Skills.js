@@ -73,7 +73,7 @@ const _skills = [
 ];
 
 const _otherSkills = {
-  tools: "webpack, babel, docker, VScode AWS",
+  tools: "webpack, docker, VScode, AWS",
   system: "Linux, Windows, MAC"
 }
 
@@ -114,21 +114,10 @@ export default function Skills() {
           </Skill>
       
         </div>
-        {/* <div>
-          <p> 工具：webpack babel docker npm VScode </p>
-          <p> 操作系统：Linux Windows Mac </p>
-        </div> */}
+    
       </CardContent>
  
     </Card>
   );
 }
 
-  // const renderSwitch =(param)=> {
-  //   switch(param) {
-  //     case 'foo':
-  //       return 'bar';
-  //     default:
-  //       return 'foo';
-  //   }
-  // }
