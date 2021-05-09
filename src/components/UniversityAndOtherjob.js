@@ -1,7 +1,4 @@
 import {Items} from './Item';
-
-
-
   
 export function University({year, diplo, uni}) {
     return(

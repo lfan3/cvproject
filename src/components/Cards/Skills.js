@@ -112,9 +112,7 @@ export default function Skills() {
           <Skill tech={_otherSkills.tools} level={0}>
             <Icon className="fas fa-tools" color='secondary' fontSize='inherit'/>
           </Skill>
-      
         </div>
-    
       </CardContent>
  
     </Card>

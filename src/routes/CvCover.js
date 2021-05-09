@@ -1,11 +1,9 @@
 import anime from 'animejs/lib/anime.es.js';
 import {useEffect,Fragment} from 'react';
-import  OrganicForm from '../components/OrganicForm';
-import { useHistory } from "react-router-dom";
-import IconButton from '@material-ui/core/IconButton';
+import OrganicForm from '../components/OrganicForm';
+import {useHistory} from "react-router-dom";
 import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import Icon from '@material-ui/core/Icon';
 
 export default function CvCover(props){
     const history = useHistory();

@@ -8,7 +8,7 @@ import Education from '../components/Cards/Education';
 import OtherExperiences from '../components/Cards/OtherExperiences';
 import PhenixStage from '../components/Cards/PhenixStage';
 import Interest from '../components/Cards/Interest';
-import  OrganicForm from '../components/OrganicForm'
+import OrganicForm from '../components/OrganicForm'
 import {useEffect, Fragment} from 'react';
 import {GoBack} from '../components/GoBack';
 import {useHistory} from 'react-router-dom';
@@ -22,7 +22,6 @@ export default function Home(props){
             rooEl.classList.remove('cvCoverRoot');
         }
         rooEl.classList.add('cvRoot');
-        console.log('home')
     })
 
     function clickHandler(){

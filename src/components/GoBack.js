@@ -1,6 +1,5 @@
 import IconButton from '@material-ui/core/IconButton';
 import React from 'react';
-import Icon from '@material-ui/core/Icon';
 
 export function GoBack({clickHandler}){
     return(

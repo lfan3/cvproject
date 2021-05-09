@@ -111,20 +111,12 @@ body{
 }
 .gobackbtn{
     position: absolute !important;
-    left:4.5rem;
+    left:4rem;
     top:1rem;
 }
 .gobackbtn span{
     color:wheat;
     display: inline-block;
-}
-
-.label:before{
-    content: "⇐";
-    font-size: 2em;
-    position: absolute;
-    top: -0.5rem;
-    left: -1.8rem;
 }
 
 /* nameCard */
