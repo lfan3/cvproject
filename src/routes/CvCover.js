@@ -1,14 +1,23 @@
 import anime from 'animejs/lib/anime.es.js';
 import {useEffect,Fragment} from 'react';
-import  OrganicForm from '../components/OrganicForm'
-import { Link } from "react-router-dom"
+import  OrganicForm from '../components/OrganicForm';
+import { useHistory } from "react-router-dom";
 
-export default function CvCover(){
-    const rooEl = document.getElementById('root');
-    if(rooEl.className === 'cvRoot'){
-        rooEl.classList.remove('cvRoot');
+export default function CvCover(props){
+    const history = useHistory();
+
+    function handleClick() {
+      history.push("/cv");
     }
-    rooEl.classList.add('cvCoverRoot');
+
+    useEffect(()=>{
+        const rooEl = document.getElementById('root');
+        if(rooEl.className === 'cvRoot'){
+            rooEl.classList.remove('cvRoot');
+        }
+        rooEl.classList.add('cvCoverRoot');
+    }, [])
+
     useEffect(()=>{
         const tl = anime.timeline({
             easing:'easeInOutQuad',
@@ -26,12 +35,12 @@ export default function CvCover(){
     return(
         <Fragment>
             <OrganicForm/>
-            <Link to='/cv' className='organic--title'>
+            <div className='organic--title' onClick={handleClick}>
             <h2>
                 <div className="letter jian">简</div>
                 <div className="letter li">历</div>
             </h2>
-            </Link>
+            </div>
         </Fragment>
 
     )

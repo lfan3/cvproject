@@ -9,16 +9,22 @@ import OtherExperiences from '../components/Cards/OtherExperiences';
 import PhenixStage from '../components/Cards/PhenixStage';
 import Interest from '../components/Cards/Interest';
 import  OrganicForm from '../components/OrganicForm'
-import {Fragment} from 'react';
+import {useEffect, Fragment} from 'react';
 
-export default function Home(){
-    const rooEl = document.getElementById('root');
-    if(rooEl.className === 'cvCoverRoot'){
-        rooEl.classList.remove('cvCoverRoot');
-    }
-    rooEl.classList.add('cvRoot');
+export default function Home(props){
+    console.log(props)
+    useEffect(()=>{
+        const rooEl = document.getElementById('root');
+        if(rooEl.className === 'cvCoverRoot'){
+            rooEl.classList.remove('cvCoverRoot');
+        }
+        rooEl.classList.add('cvRoot');
+        console.log('home')
+    })
+
     return(
         <Fragment>
+        <OrganicForm/>
         <div className = 'homeWrapper'>
             <Container className='contentWrapper'>
                 <Row className="header" >
