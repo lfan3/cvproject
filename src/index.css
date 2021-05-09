@@ -6,6 +6,22 @@ body{
 .cvCoverRoot{
     height: 100vh;
 }
+.ghcv{
+    color:wheat;
+    position: absolute;
+    width: 11rem;
+    top: 60%;
+}
+.ghcv--link{
+    position: relative;
+}
+.ghcv--link:before{
+    content:"查阅本简历源代码:";
+    font-size: 1em;
+    position: absolute;
+    top: -0.5rem;
+    left: -1.8rem;
+}
 .cvRoot{
     height: 100rem;
 }
@@ -90,19 +106,22 @@ body{
 }
 .gobackbtn{
     position: absolute !important;
-    left:3rem;
+    left:4.5rem;
     top:1rem;
 }
 .gobackbtn span{
     color:wheat;
     display: inline-block;
 }
-.gobackbtn .label{
-    font-size: 1rem;
+
+.label:before{
+    content: "⇐";
+    font-size: 2em;
+    position: absolute;
+    top: -0.5rem;
+    left: -1.8rem;
 }
-.fa-hand-point-left{
-    color: wheat;
-}
+
 /* nameCard */
 .presentationCard{
     position: absolute;
