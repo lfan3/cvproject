@@ -2,7 +2,7 @@
 import Home from './routes/Home'
 import CvCover from './routes/CvCover';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import { Route, Switch, HashRouter} from "react-router-dom"
 
 const theme = createMuiTheme({
     palette: {
@@ -25,13 +25,14 @@ const theme = createMuiTheme({
 export default function App(){
     return(
         <ThemeProvider theme={theme}>
-        <Router>
-        <Switch>
-          <Route exact path={process.env.PUBLIC_URL + '/'} render={routeProps => (<CvCover {...routeProps}/>)}/>
-          <Route exact path={process.env.PUBLIC_URL + '/cv'} component={Home}/>
-        </Switch>
-        </Router> 
- 
+        <HashRouter>
+          <Switch>
+            <Route exact path={'/'} component = {CvCover}/>
+            <Route exact path={'/cv'} component={Home}/>
+          </Switch>
+        </HashRouter> 
         </ThemeProvider>
     )
 }
+
+

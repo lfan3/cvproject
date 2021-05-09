@@ -10,8 +10,12 @@ import PhenixStage from '../components/Cards/PhenixStage';
 import Interest from '../components/Cards/Interest';
 import  OrganicForm from '../components/OrganicForm'
 import {useEffect, Fragment} from 'react';
+import {GoBack} from '../components/GoBack';
+import {useHistory} from 'react-router-dom';
 
 export default function Home(props){
+    const history = useHistory();
+
     useEffect(()=>{
         const rooEl = document.getElementById('root');
         if(rooEl.className === 'cvCoverRoot'){
@@ -21,8 +25,13 @@ export default function Home(props){
         console.log('home')
     })
 
+    function clickHandler(){
+        history.push('/')
+    }
     return(
         <Fragment>
+        <GoBack clickHandler={clickHandler}/>
+
         <OrganicForm/>
         <div className = 'homeWrapper'>
             <Container className='contentWrapper'>

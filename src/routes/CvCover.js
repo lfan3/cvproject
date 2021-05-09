@@ -36,10 +36,10 @@ export default function CvCover(props){
         <Fragment>
             <OrganicForm/>
             <div className='organic--title' onClick={handleClick}>
-            <h2>
+            <button>
                 <div className="letter jian">简</div>
                 <div className="letter li">历</div>
-            </h2>
+            </button>
             </div>
         </Fragment>
 

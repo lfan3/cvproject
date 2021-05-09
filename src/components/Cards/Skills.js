@@ -73,7 +73,7 @@ const _skills = [
 ];
 
 const _otherSkills = {
-  tools: "webpack, babel, docker, npm, VScode AWS",
+  tools: "webpack, babel, docker, VScode AWS",
   system: "Linux, Windows, MAC"
 }
 
