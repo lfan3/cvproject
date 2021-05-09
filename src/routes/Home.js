@@ -12,7 +12,6 @@ import  OrganicForm from '../components/OrganicForm'
 import {useEffect, Fragment} from 'react';
 
 export default function Home(props){
-    console.log(props)
     useEffect(()=>{
         const rooEl = document.getElementById('root');
         if(rooEl.className === 'cvCoverRoot'){

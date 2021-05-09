@@ -27,8 +27,8 @@ export default function App(){
         <ThemeProvider theme={theme}>
         <Router>
         <Switch>
-          <Route exact path="/" render={routeProps => (<CvCover {...routeProps}/>)}/>
-          <Route exact path="/cv" component={Home}/>
+          <Route exact path={process.env.PUBLIC_URL + '/'} render={routeProps => (<CvCover {...routeProps}/>)}/>
+          <Route exact path={process.env.PUBLIC_URL + '/cv'} component={Home}/>
         </Switch>
         </Router> 
  
