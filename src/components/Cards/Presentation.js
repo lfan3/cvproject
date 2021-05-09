@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
   },
   qrcode:{
     width:'10em',
-
   }
 }));
 

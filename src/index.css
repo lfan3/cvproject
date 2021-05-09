@@ -54,7 +54,6 @@ body{
     height: 100%;
 }
 
-
 .organic + a{
     text-decoration: none !important;
 }
@@ -177,7 +176,7 @@ body{
 }
 
 .photo{
-    height: 10em;
+    height: 9.5em;
 }
 
 /* skillCard Component */
@@ -374,7 +373,7 @@ body{
 
 }
 
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 640px)  {
     .contentCard{
         width: 100%;
     }

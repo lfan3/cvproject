@@ -65,7 +65,7 @@ const _skills = [
     icon:"fas fa-server",
   },
   {
-    tech:'PHP symfony',
+    tech:'PHP Symfony',
     level:5,
     icon:'fab fa-php',
   },
@@ -73,7 +73,7 @@ const _skills = [
 ];
 
 const _otherSkills = {
-  tools: "webpack, docker, VScode, AWS",
+  tools: "Webpack, Docker, VScode, AWS",
   system: "Linux, Windows, MAC"
 }
 
