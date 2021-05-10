@@ -9,7 +9,7 @@ const _jobs = [
   {
     year: "2020/08-2021/01",
     company: "PHENIX 巴黎",
-    job: "全栈工程师(实习)", 
+    job: "全栈工程师", 
     jobContent:[
             {
                 item:"后端",

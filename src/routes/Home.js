@@ -35,10 +35,10 @@ export default function Home(props){
         <div className = 'homeWrapper'>
             <Container className='contentWrapper'>
                 <Row className="header" >
-                    <Col lg={{span:9}} md={6} sm={6} xs={6}>
+                    <Col lg={{span:9}} md={6} sm={6} xs={10}>
                         <Presentation/>
                     </Col>
-                    <Col lg={{span:3}} md={6} sm={6} xs={6}>
+                    <Col lg={{span:3}} md={6} sm={6} xs={2}>
                         <Photo/>
                     </Col>
                 </Row>

@@ -8,7 +8,7 @@ body{
 }
 .ghcvWrapper{
     position: absolute;
-    top:60%;
+    top:80%;
     right:0;
     left:0;
     text-align: center;
@@ -44,6 +44,14 @@ body{
     right: 0;
     border-radius: 5px;
 }
+
+.contentWrapper{
+    position:relative;
+    height: 100%;
+    top: 0;
+    padding: 6em 5em !important;
+}
+
 .organic--title{
     position: absolute;
     top:43%;
@@ -90,12 +98,7 @@ body{
     opacity: 0;
 }
 
-.contentWrapper{
-    position:relative;
-    height: 100%;
-    top: 0;
-    padding: 6em 5em !important;
-}
+
 
 .header{
     height: 18%;
@@ -200,6 +203,12 @@ body{
     position: relative;
     top:0.4em;
     margin-right: 0.3em;
+}
+
+.Typescript{
+    display: block;
+    margin-left:1.9rem;
+    margin-top:-1.35rem;
 }
 
 .dot{
@@ -359,13 +368,13 @@ body{
         top: 4rem;
     }
     .educationCard {
-        top: 18.5rem;
+        top: 20rem;
     }
     .otherExperienceCard{
-        top: 21rem;
+        top: 22rem;
     }
     .interestCard{
-        top: 44rem;
+        top: 45rem;
     }
     .homeWrapper{
         height:152em;
@@ -387,13 +396,13 @@ body{
         height: 20%;
     }
     .skillsCard{
-        top:0.5rem
+        top:1rem
     }
     .experienceCard{
-        top: 4rem;
+        top: 4.5rem;
     }
     .educationCard {
-        top: 14rem;
+        top: 15rem;
     }
     .otherExperienceCard{
         top: 17rem;
@@ -402,7 +411,8 @@ body{
         top: 40rem;
     }
     .homeWrapper{
-        height:152em;
+        height:152rem;
+        width: 43rem;
     }
-
 }
+
