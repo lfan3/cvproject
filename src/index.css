@@ -134,6 +134,7 @@ body{
 
 .section1{
     height: 38%;
+    margin-top: -1rem;
 }
 
 .section2{
@@ -344,7 +345,7 @@ body{
 }
 /* interest card */
 .interestCard{
-    margin-top: 32rem;
+    margin-top: 36rem;
     position: absolute;
     left: 0;
     width: 24.7em;
