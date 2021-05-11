@@ -28,10 +28,9 @@ body{
 }
 
 .cvRoot{
-    height: 180rem;
+    height: 172rem;
 }
 .outsidePaper{
-    width:60em;
     background-color:white;
     margin:4em auto;
     position: absolute;
@@ -42,12 +41,15 @@ body{
     box-shadow: 8px 10px 5px rgba(10, 0, 10, 0.3);
     border-radius: 5px;
 }
+
 .homeWrapper{
+    width:60em;
     top:0;
     height:90em;
 }
 
 .motivationWrapper{
+    width:60em;
     top:95rem;
     height:68em;
 }
@@ -71,6 +73,7 @@ body{
 .motivationWrapper footer{
     margin-top: 2rem;
 }
+
 
 .contentWrapper{
     position:relative;
@@ -426,20 +429,44 @@ body{
         top:1rem
     }
     .experienceCard{
-        top: 4.5rem;
+        top: 5rem;
     }
     .educationCard {
-        top: 15rem;
+        top: 20rem;
     }
     .otherExperienceCard{
-        top: 17rem;
+        top: 23rem;
     }
     .interestCard{
-        top: 40rem;
+        top: 46rem;
     }
     .homeWrapper{
         height:152rem;
         width: 43rem;
     }
+    .motivationWrapper{
+        top: 156rem;
+        width: 43rem;
+        height: 80rem;
+    }
+    .cvRoot{
+        width: 43rem;
+        height: 246rem;
+    }
 }
+/*ipad portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (max-height:768px) and (orientation : portrait) {
+    .motivationWrapper{
+        top: 160rem;
+        height: 80rem;
+    }
+    .cvRoot{
+        width: 60rem;
+        height: 260rem;
+    }
+    .educationCard {
+        top: 19rem;
+    }
+}
+
 

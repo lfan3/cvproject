@@ -35,10 +35,10 @@ export default function Home(props){
         <div className = 'homeWrapper outsidePaper'>
             <Container className='contentWrapper'>
                 <Row className="header" >
-                    <Col lg={{span:9}} md={6} sm={6} xs={10}>
+                    <Col lg={{span:9}} md={6} sm={6} xs={8}>
                         <Presentation/>
                     </Col>
-                    <Col lg={{span:3}} md={6} sm={6} xs={2}>
+                    <Col lg={{span:3}} md={6} sm={6} xs={4}>
                         <Photo/>
                     </Col>
                 </Row>
@@ -104,6 +104,8 @@ export default function Home(props){
      
             </article>
         </div>
+
+      
         </Fragment>
     )
 }
