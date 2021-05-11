@@ -19,6 +19,10 @@
 ## 技术栈
 * React, animeJs, React Router Dom, gh-pages
 
+## 其它
+本页只考虑了部分装置的响应设计的动作分界点
+没有考虑游览器版本问题
+
 
 
 
