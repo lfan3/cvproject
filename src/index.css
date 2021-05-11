@@ -78,7 +78,7 @@ body{
 .contentWrapper{
     position:relative;
     height: 100%;
-    top: 0;
+    top: -1.5em;
     padding: 6em 5em !important;
 }
 
@@ -128,10 +128,8 @@ body{
     opacity: 0;
 }
 
-
-
 .header{
-    height: 18%;
+    height: 15%;
 }
 
 .section1{
@@ -155,6 +153,11 @@ body{
 .presentationCard{
     position: absolute;
     left: 0;
+    right:0;
+}
+.presentation--header{
+    display: flex;
+    justify-content: space-between;
 }
 .name{
     font-family: 'Noto Sans SC', sans-serif;
@@ -169,7 +172,12 @@ body{
     border-radius: 5px;
 }
 .presentation-subtitle{
-    width:6em;
+    width: 6em;
+    height: 1.8em;
+    margin-left: 2em;
+    position: absolute;
+    left: 10rem;
+    top: 1.2rem;
 }
 
 .presentation--citation{
@@ -256,9 +264,10 @@ body{
 /* educationCard */
 .educationCard{
     position: absolute;
-    left: 0;
-    width: 24.7em;
-    margin-top: -0.5rem;
+    /* left: 0; */
+    width: 25.5em;
+    margin-top: 11rem;
+    right: 0;
 }
 .serif-subtitle{
     font-family: 'Noto Serif SC', serif;
@@ -268,17 +277,40 @@ body{
   
     padding: 0.1em;
 }
-.item--item1{
-    font-weight: 100;
-    margin-top: 0.4em;
+.item{
+    text-align: justify;
 }
-
-.item--item2{
+.item:first-child {
+    margin-top: 0.5rem;
+}
+.item--link{
+    margin-bottom: 0.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color:#7986cb
+}
+.item--link:hover{
+    text-decoration: none;
+}
+.item--item0{
     font-weight: 900;
 }
 
-.item--item3{
+.item--item1{
     font-weight: 400;
+}
+
+.item--item2{
+    font-weight: 400;
+}
+
+/*otherExperienceCard*/
+.personalProjectCard
+{
+    position: absolute;
+    left: 0;
+    width: 24.7rem;
+    margin-top: -1.5em;
 }
 
 /*otherExperienceCard*/
@@ -287,6 +319,7 @@ body{
     right: 0;
     margin-top: 11em;
 }
+
 
 .experienceCard{
     position: absolute;
@@ -311,7 +344,7 @@ body{
 }
 /* interest card */
 .interestCard{
-    margin-top: 27.3rem;
+    margin-top: 32rem;
     position: absolute;
     left: 0;
     width: 24.7em;
@@ -383,7 +416,10 @@ body{
         width: 100%;
     }
     .header{
-        height: 10%;
+        height: 8%;
+    }
+    .presentation-subtitle {
+        top:1rem;
     }
     .section1{
         height: 35%;
@@ -397,10 +433,10 @@ body{
     .experienceCard{
         top: 4rem;
     }
-    .educationCard {
+    .personalProjectCard {
         top: 20rem;
     }
-    .otherExperienceCard{
+    .educationCard{
         top: 22rem;
     }
     .interestCard{
@@ -417,7 +453,10 @@ body{
         width: 100%;
     }
     .header{
-        height: 10%;
+        height: 7%;
+    }
+    .presentation-subtitle {
+        top:1rem;
     }
     .section1{
         height: 35%;
@@ -425,20 +464,20 @@ body{
     .section2{
         height: 20%;
     }
-    .skillsCard{
+    /* .skillsCard{
         top:1rem
-    }
+    } */
     .experienceCard{
-        top: 5rem;
+        top: 4rem;
     }
-    .educationCard {
-        top: 20rem;
+    .personalProjectCard {
+        top: 19.5rem;
     }
-    .otherExperienceCard{
-        top: 23rem;
+    .educationCard{
+        top: 26.5rem;
     }
     .interestCard{
-        top: 46rem;
+        top: 47rem;
     }
     .homeWrapper{
         height:152rem;
@@ -455,7 +494,7 @@ body{
     }
 }
 /*ipad portrait*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (max-height:768px) and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (max-height:1024px) and (orientation : portrait) {
     .motivationWrapper{
         top: 160rem;
         height: 80rem;
@@ -464,7 +503,8 @@ body{
         width: 60rem;
         height: 260rem;
     }
-    .educationCard {
+
+    .personalProjectCard {
         top: 19rem;
     }
 }

@@ -12,6 +12,7 @@ import OrganicForm from '../components/OrganicForm'
 import {useEffect, Fragment} from 'react';
 import {GoBack} from '../components/GoBack';
 import {useHistory} from 'react-router-dom';
+import PersonalProjects from '../components/Cards/PersonalProjects';
 
 export default function Home(props){
     const history = useHistory();
@@ -35,11 +36,8 @@ export default function Home(props){
         <div className = 'homeWrapper outsidePaper'>
             <Container className='contentWrapper'>
                 <Row className="header" >
-                    <Col lg={{span:9}} md={6} sm={6} xs={8}>
+                    <Col>
                         <Presentation/>
-                    </Col>
-                    <Col lg={{span:3}} md={6} sm={6} xs={4}>
-                        <Photo/>
                     </Col>
                 </Row>
                 <Row className="section1">
@@ -52,11 +50,11 @@ export default function Home(props){
                 </Row>
                 <Row className="section2">
                     <Col lg={6} md={12}>
-                        <Education/>
-                        <Interest/> 
+                        <PersonalProjects/> 
+                        <Interest/>
                     </Col>
                     <Col lg={6} md={12}>
-                        <OtherExperiences/> 
+                        <Education/>
                     </Col>
                 </Row>
             </Container>
@@ -94,7 +92,7 @@ export default function Home(props){
                 我希望自己未来的雇佣公司可以不拘一格降人才。
                 </p>
                 <p className="paragraph">
-                目前我仍在法国，正在建造一个交友网站，预计今年七月回国。因此我可以从八月或者九月开始工作。
+                目前我仍在法国，由于回国一票难求，因此需要等到今年七月才可以回国。因此我可以远程立马工作。或者从八月或者九月到岗工作。
                 最后非常感谢您的阅读，希望可以很快听到您的消息。
                 </p>
                 </section>
