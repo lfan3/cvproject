@@ -33,7 +33,7 @@ const _jobs = [
             },
             {
                 item:"工作方法",
-                content: "Scrum 敏捷开发" 
+                content: "Scrum 敏捷开发(Agile software development)" 
             },
     ]
   }

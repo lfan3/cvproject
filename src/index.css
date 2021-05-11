@@ -28,21 +28,48 @@ body{
 }
 
 .cvRoot{
-    height: 100rem;
+    height: 180rem;
 }
-.homeWrapper{
+.outsidePaper{
     width:60em;
-    height:90em;
     background-color:white;
     margin:4em auto;
-    position:relative;
-    padding-bottom: 3em;
-    box-shadow: 8px 10px 5px rgba(10, 0, 10, 0.3);
     position: absolute;
     left:0;
-    top:0;
     right: 0;
     border-radius: 5px;
+    padding-bottom: 3em;
+    box-shadow: 8px 10px 5px rgba(10, 0, 10, 0.3);
+    border-radius: 5px;
+}
+.homeWrapper{
+    top:0;
+    height:90em;
+}
+
+.motivationWrapper{
+    top:95rem;
+    height:68em;
+}
+
+.motivationWrapper .name{
+    text-align: center;
+}
+.paragraph{
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+.paragraph--poli{
+    margin-top: 4rem;
+}
+
+.paragraph:nth-child(2){
+    margin-top: 2rem;
+}
+
+.motivationWrapper footer{
+    margin-top: 2rem;
 }
 
 .contentWrapper{

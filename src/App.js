@@ -26,8 +26,8 @@ export default function App(){
         <ThemeProvider theme={theme}>
         <HashRouter>
           <Switch>
-            <Route exact path={'/'} component = {CvCover}/>
             <Route exact path={'/cv'} component={Home}/>
+            <Route component = {CvCover}/>
           </Switch>
         </HashRouter> 
         </ThemeProvider>
